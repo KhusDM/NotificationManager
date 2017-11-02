@@ -2,22 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace NotificationManager
+namespace Manager
 {
     public class NotificationManager:INotificationManager
     {
-        private Dictionary<string, List<string>> dictSignal;
-
-        public NotificationManager(IDictionary<string,IList<string>> dictSignal)
-        {
-            this.dictSignal =(Dictionary<string,List<string>>) dictSignal;
-        }
+        private IDictionary<string, IList<string>> dictSignal;
 
         public NotificationManager()
         {
-            this.dictSignal = new Dictionary<string, List<string>>();
+            this.dictSignal = new Dictionary<string, IList<string>>();
             this.dictSignal.Add("T8", new List<string> { "lor@mail.ru" });
             this.dictSignal.Add("G15", new List<string> { "roma@yandex.ru", "worker115@yandex.ru" });
+        }
+
+        public NotificationManager(IDictionary<string,IList<string>> dictSignal)
+        {
+            this.dictSignal = dictSignal;
         }
 
         protected virtual void NewsLetter(string recipient, string signal)
@@ -64,9 +64,9 @@ namespace NotificationManager
             }
         }
 
-        public IEnumerable<string> ListOfSupportedSignals()
+        public IList<string> ListOfSupportedSignals()
         {
-            return dictSignal.Keys.Where(key => dictSignal[key].Count != 0);
+            return dictSignal.Keys.Where(key => dictSignal[key].Count != 0).ToList();
         }
 
         public void AddSignal(string signal)

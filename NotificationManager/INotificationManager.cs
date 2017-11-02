@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace NotificationManager
+namespace Manager
 {
-     public interface INotificationManager
+    public interface INotificationManager
     {
         //Обработать сигнал
         void ProcessSignal(string signal);
@@ -14,7 +14,7 @@ namespace NotificationManager
         void RemoveRecipientForSignal(string email, string signal);
 
         //Получить список поддерживаемых сигналов
-        IEnumerable<string> ListOfSupportedSignals();
+        IList<string> ListOfSupportedSignals();
 
         //Добавить сигнал
         void AddSignal(string signal);

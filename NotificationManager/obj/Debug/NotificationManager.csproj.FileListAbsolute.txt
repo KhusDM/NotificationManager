@@ -1,0 +1,6 @@
+C:\Users\dmitrii\Documents\Visual Studio 2017\Projects\NotificationManager\NotificationManager\bin\Debug\NotificationManager.dll
+C:\Users\dmitrii\Documents\Visual Studio 2017\Projects\NotificationManager\NotificationManager\bin\Debug\NotificationManager.pdb
+C:\Users\dmitrii\Documents\Visual Studio 2017\Projects\NotificationManager\NotificationManager\obj\Debug\NotificationManager.csprojResolveAssemblyReference.cache
+C:\Users\dmitrii\Documents\Visual Studio 2017\Projects\NotificationManager\NotificationManager\obj\Debug\NotificationManager.csproj.CoreCompileInputs.cache
+C:\Users\dmitrii\Documents\Visual Studio 2017\Projects\NotificationManager\NotificationManager\obj\Debug\NotificationManager.dll
+C:\Users\dmitrii\Documents\Visual Studio 2017\Projects\NotificationManager\NotificationManager\obj\Debug\NotificationManager.pdb
